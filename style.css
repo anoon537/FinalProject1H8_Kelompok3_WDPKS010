@@ -1,0 +1,97 @@
+/* Style untuk header */
+header {
+  background-color: #f8f9fa;
+  padding: 10px 0;
+}
+
+/* Style untuk navbar */
+.navbar-brand {
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  font-weight: bold;
+}
+
+/* Style untuk banner */
+#banner {
+  background-color: #f2f2f2;
+  padding: 50px 0;
+}
+
+#banner h1 {
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+#banner p {
+  margin-bottom: 30px;
+}
+
+/* Style untuk order now modal */
+.modal-content table {
+  margin-bottom: 0;
+}
+
+/* Style untuk about us */
+#about-us {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+}
+
+#about-us h2 {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#about-us p {
+  margin-bottom: 30px;
+}
+
+/* Style untuk services */
+#services {
+  background-color: #ffffff;
+  padding: 50px 0;
+}
+
+#services h2 {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#services p {
+  margin-bottom: 30px;
+}
+#banner {
+  position: relative;
+}
+
+.banner-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner-text h1 {
+  font-size: 48px;
+}
+
+.banner-text p {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.banner-text button {
+  font-size: 18px;
+}

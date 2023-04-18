@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Lorem - Company Profile</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Lorem</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Banner -->
+    <section id="banner">
+      <div class="banner-text">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <h1>Welcome to Lorem</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                commodo, nunc id congue tincidunt, dolor orci volutpat lorem,
+                non feugiat odio nibh vel ipsum.
+              </p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#orderNowModal"
+              >
+                Order Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <img
+          src="img/4.jpeg"
+          alt="Banner Image"
+          class="img-fluid banner-image"
+        />
+      </div>
+    </section>
+
+    <!-- Order Now Modal -->
+    <div
+      class="modal fade"
+      id="orderNowModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="orderNowModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="orderNowModalLabel">Order Now</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Service</th>
+                  <th scope="col">Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Service 1</td>
+                  <td>$100</td>
+                </tr>
+                <tr>
+                  <td>Service 2</td>
+                  <td>$200</td>
+                </tr>
+                <tr>
+                  <td>Service 3</td>
+                  <td>$300</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Order Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About Us -->
+    <section id="about-us">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2>About Us</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              commodo, nunc id congue tincidunt, dolor orci volutpat lorem, non
+              feugiat odio nibh vel ipsum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2>Our Services</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Service 1</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  commodo, nunc id congue tincidunt, dolor orci volutpat lorem,
+                  non feugiat odio nibh vel ipsum.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Service 2</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  commodo, nunc id congue tincidunt, dolor orci volutpat lorem,
+                  non feugiat odio nibh vel ipsum.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Service 3</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  commodo, nunc id congue tincidunt, dolor orci volutpat lorem,
+                  non feugiat odio nibh vel ipsum.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials -->
+    <section id="testimonials">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2>Testimonials</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-body">
+                <p class="card-text">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  commodo, nunc id congue tincidunt, dolor orci volutpat lorem,
+                  non feugiat odio nibh vel ipsum."
+                </p>
+                <p class="testimonial-author">- John Doe</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-body">
+                <p class="card-text">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  commodo, nunc id congue tincidunt, dolor orci volutpat lorem,
+                  non feugiat odio nibh vel ipsum."
+                </p>
+                <p class="testimonial-author">- Jane Doe</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-body">
+                <p class="card-text">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  commodo, nunc id congue tincidunt, dolor orci volutpat lorem,
+                  non feugiat odio nibh vel ipsum."
+                </p>
+                <p class="testimonial-author">- Bob Smith</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Us -->
+    <section id="contact-us">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2>Contact Us</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <form>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter your email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="3"
+                  placeholder="Enter your message"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          <div class="col-lg-6">
+            <p>
+              Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed
+              commodo, nunc id congue tincidunt, dolor orci volutpat lorem, non
+              feugiat odio nibh vel ipsum. Nulla facilisi. Morbi malesuada est
+              id leo commodo, eget maximus tellus blandit. Etiam ornare, magna
+              ac commodo lobortis, velit quam congue ex, id aliquet sapien justo
+              quis enim. Vestibulum lobortis arcu vel enim pulvinar, at euismod
+              ipsum maximus. Fusce ac lobortis elit, eu tincidunt ipsum.
+              Curabitur vestibulum lacinia lorem at tristique. Suspendisse
+              potenti. Sed in diam in augue ullamcorper eleifend. Nulla
+              facilisi. Donec et vestibulum urna. Donec vel dictum odio. Duis
+              eget consectetur turpis.
+              <br /><br />
+              <strong>Phone:</strong> 123-456-7890<br />
+              <strong>Email:</strong> info@nama_kalian.com<br />
+              <strong>Address:</strong> 123 Main Street, Suite 200<br />
+              New York, NY 10001
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <p>&copy; 2023 Nama_Kalian. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- JavaScript files -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
