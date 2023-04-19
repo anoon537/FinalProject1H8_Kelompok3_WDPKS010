@@ -2,5 +2,5 @@
 # Kelas    : WDP-KS-010
 # Kelompok : 3
 Muhammad Mahmuda Prawira </br>
-Elan Pratam </br>
+Elan Pratama </br>
 Almas Agung Firdaus
