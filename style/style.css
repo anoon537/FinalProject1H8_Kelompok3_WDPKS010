@@ -1,7 +1,15 @@
+body {
+  background-color: #e0e0e0;
+}
+
 /* Style untuk header */
 header {
-  background-color: #f8f9fa;
+  background-color: #cdcdcd;
   padding: 10px 0;
+}
+
+.navbar {
+  background-color: #cdcdcd;
 }
 
 /* Style untuk navbar */
@@ -36,7 +44,7 @@ header {
 
 /* Style untuk about us */
 #about-us {
-  background-color: #f8f9fa;
+  background-color: #e0e0e0;
   padding: 50px 0;
 }
 
@@ -52,7 +60,7 @@ header {
 
 /* Style untuk services */
 #services {
-  background-color: #ffffff;
+  background-color: #e0e0e0;
   padding: 50px 0;
 }
 
@@ -94,4 +102,8 @@ header {
 
 .banner-text button {
   font-size: 18px;
+}
+
+footer {
+  font-weight: bold;
 }
