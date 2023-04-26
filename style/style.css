@@ -199,166 +199,39 @@ img {
 #services p {
   margin-bottom: 30px;
 }
+#banner {
+  position: relative;
+}
+
+.banner-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner-text h1 {
+  font-size: 48px;
+}
+
+.banner-text p {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.banner-text button {
+  font-size: 18px;
+}
 
 footer {
   font-weight: bold;
-  margin-top: 10px;
-}
-
-/* TODOS STYLE */
-.td-card {
-  margin-bottom: 20px;
-}
-
-@media only screen and (max-width: 768px) {
-  .col-md-6 {
-    margin-bottom: 20px;
-  }
-}
-
-.card-body .btn {
-  margin-top: 5px;
-}
-
-.card-body .list-group {
-  margin-left: 5px;
-}
-
-.float-right {
-  float: right;
-}
-
-/* Style Our Work */
-.container{
-  width: 1200px;
-  margin: 0px auto;
-}
-
-.box{
-  width: 235px;
-  padding: 20px;
-  background-color: #f1f1f1;
-  border: 1px solid grey;
-}
-
-.box img{
-  width: 100%;
-  height: 170px;
-  object-fit: contain;
-}
-
-/* Footer */
-
-footer {
-  background-color: #121315;
-  color: #a7a7a7;
-  font-size: 16px;
-}
-footer * {
-  font-family: "Poppins", sans-serif;
-  box-sizing: border-box;
-  border: none;
-  outline: none;
-}
-.row {
-  padding: 1em 1em;
-}
-.row.primary {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 2fr;
-  align-items: stretch;
-}
-.column {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 0 2em;
-  min-height: 15em;
-}
-h3 {
-  width: 100%;
-  text-align: left;
-  color: white;
-  font-size: 1.4em;
-  white-space: nowrap;
-}
-ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  margin: 0;
-}
-/* li:not(:first-child) {
-  margin-top: 0.8em;
-} */
-ul li a {
-  color: #a7a7a7;
-  text-decoration: none;
-}
-ul li a:hover {
-  color: #2a8ded;
-}
-.about p {
-  text-align: justify;
-  line-height: 2;
-  margin: 0;
-}
-input,
-button .subs{
-  font-size: 1em;
-  padding: 1em;
-  width: 100%;
-  border-radius: 5px;
-  margin-bottom: 5px;
-  color: #ffffff;
-
-}
-.subs{
-  background-color: #0094e6;
-  padding: 15px 41%;
-  border-radius: 10px;
-}
-
-div.tweet {
-  display: flex;
-  justify-content: space-around;
-  font-size: 2.4em;
-  flex-direction: row;
-  margin-top: 0.5em;
-}
-.tweet i {
-  color: #bac6d9;
-}
-
-.copyright {
-  padding: 10px;
-  margin: auto;
-  background-color: #25262e;
-}
-.footer-menu{
-  float: left;
-    margin-top: 10px;
-}
-
-.footer-menu a{
-  color: #cfd2d6;
-  padding: 6px;
-
-  text-decoration: none;
-}
-.footer-menu a:hover{
-  color: #27bcda;
-}
-.copyright p {
-  font-size: 0.9em;
-  text-align: right;
-}
-@media screen and (max-width: 850px) {
-  .row.primary {
-    grid-template-columns: 1fr;
-  }
-
 }
 
 
