@@ -1,0 +1,108 @@
+body {
+  background-color: #caf5ff;
+}
+
+/* Style untuk header */
+header {
+  /* background-color: #cdcdcd; */
+  padding: 10px 0;
+}
+
+header {
+  background-image: radial-gradient(
+    circle at -4.41% 88.1%,
+    #caf5ff 0,
+    #8ed6fe 25%,
+    #3cb5f2 50%,
+    #0094e6 75%,
+    #0076db 100%
+  );
+}
+
+/* Style untuk navbar */
+.navbar-brand {
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  font-weight: bold;
+}
+
+/* Style untuk banner */
+#banner {
+  background-color: #f2f2f2;
+  padding: 50px 0;
+  position: relative;
+}
+
+#banner h1 {
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.banner-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner-text h1 {
+  margin-left: 10px;
+  font-size: 48px;
+  text-align: center;
+}
+
+.banner-text p {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 24px;
+  text-align: center;
+}
+
+footer {
+  background-image: radial-gradient(
+    circle at -4.41% 88.1%,
+    #caf5ff 0,
+    #8ed6fe 25%,
+    #3cb5f2 50%,
+    #0094e6 75%,
+    #0076db 100%
+  );
+  margin-top: 20px;
+}
+
+footer ul li::before {
+  color: black;
+}
+
+/* TODOS STYLE */
+
+.card-header {
+  background-color: #787c80;
+}
+
+.td-card {
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .col-md-6 {
+    margin-bottom: 20px;
+  }
+}
+
+.card-body .btn {
+  margin-top: 5px;
+}
+
+.float-right {
+  float: right;
+}
