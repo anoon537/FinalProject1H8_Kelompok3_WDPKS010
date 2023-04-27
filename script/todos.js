@@ -91,3 +91,17 @@ links.forEach((link) => {
     link.removeAttribute("href");
   });
 });
+
+// footer subscribe
+const subscribe = document.getElementById("btnSubs");
+
+subscribe.addEventListener("click", () => {
+  const subsEmail = document.getElementById("emailSubs").value;
+
+  if (subsEmail.trim() === "") {
+    alert("Please fill in all fields");
+  } else {
+    alert("Thanks For Subscribe!");
+    document.getElementById("emailSubs").value = "";
+  }
+});

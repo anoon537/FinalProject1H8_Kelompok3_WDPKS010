@@ -1,40 +1,17 @@
-$(function() {
+const orderNowBtn = document.querySelector("#orderNowModal .btn-primary");
 
-    var filterList = {
+orderNowBtn.addEventListener("click", function () {
+  const selectedService = document.querySelector(
+    '#orderNowModal input[name="service"]:checked'
+  );
 
-        init: function() {
+  if (selectedService) {
+    const price = selectedService.dataset.price;
 
-            $('#portfoliolist').mixitup({
-                targetSelector: '.portfolio',
-                filterSelector: '.filter',
-                effects: ['fade'],
-                easing: 'snap',
-                animation: {
-                    duration: 1000,
-                    easing: 'easeInOutQuad'
-                }
-            });
+    alert(`You have ordered ${selectedService.value} for $${price}`);
 
-        },
-
-    };
-
-    // Run the show!
-    filterList.init();
-
-
-});
-
-$(document).ready(function() {
-    $('.popup-with-zoom-anim').magnificPopup({
-        type: 'inline',
-        fixedContentPos: false,
-        fixedBgPos: true,
-        overflowY: 'auto',
-        closeBtnInside: true,
-        preloader: false,
-        midClick: true,
-        removalDelay: 300,
-        mainClass: 'my-mfp-zoom-in'
-    });
+    $("#orderNowModal").modal("hide");
+  } else {
+    alert("Please select a service");
+  }
 });
