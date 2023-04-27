@@ -17,7 +17,7 @@
   </head>
   <body>
     <!-- Header Navbar -->
-    <header>
+    <header class="sticky-top">
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Lorem</a>
@@ -47,7 +47,7 @@
                 <a class="nav-link" href="portofolio.html">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact-us.html">Contact Us</a>
+                <a class="nav-link" href="contact-us.html">Contact</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="todos.html">Todos</a>
@@ -106,14 +106,6 @@
         </div>
       </div>
     </section>
-    <!-- Map -->
-    <iframe
-      width="80%"
-      height="500"
-      frameborder="0"
-      style="border: 0; margin-top: 50px"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6049.881319200985!2d-74.00151372674895!3d40.69730452928296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a47df06b185%3A0xc889234bc07c42ee!2sBrooklyn+Heights%2C+Brooklyn%2C+NY+11201!5e0!3m2!1sen!2sus!4v1461598289488"
-    ></iframe>
 
     <section class="page">
       <div class="container">
@@ -161,7 +153,7 @@
                 rows="3"
               ></textarea>
             </div>
-            <button class="btn btn-primary">Submit</button>
+            <button class="btn btn-primary" type="submit">Send</button>
           </div>
           <div class="col-md-5">
             <h4>Contact us</h4>
@@ -194,20 +186,38 @@
         </div>
       </div>
     </section>
+
+    <!-- Map -->
+    <iframe
+      width="80%"
+      height="500"
+      frameborder="0"
+      style="border: 0; margin-bottom: 40px"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6049.881319200985!2d-74.00151372674895!3d40.69730452928296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a47df06b185%3A0xc889234bc07c42ee!2sBrooklyn+Heights%2C+Brooklyn%2C+NY+11201!5e0!3m2!1sen!2sus!4v1461598289488"
+    ></iframe>
   </body>
+
   <!-- Footer -->
-  <footer class="bg-dark py-5">
-    <div class="container">
+  <footer class="bg-dark py-4">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-md-3 col-sm-6">
+        <div class="col-lg-4 col-md-6">
+          <h5>About Us</h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
+            doloremque molestias nobis cumque tempora dolorum distinctio ipsam
+            neque. Aperiam aliquam at molestiae sit! Dolorem autem sed eligendi
+            pariatur, iusto saepe.
+          </p>
+        </div>
+        <div class="col-lg-2 col-md-6">
           <h5>Company</h5>
           <ul class="list-unstyled">
-            <li><a data-href="#">About Us</a></li>
             <li><a data-href="#">Careers</a></li>
             <li><a data-href="contact-us.html">Contact Us</a></li>
           </ul>
         </div>
-        <div class="col-md-3 col-sm-6">
+        <div class="col-lg-2 col-md-6">
           <h5>Services</h5>
           <ul class="list-unstyled">
             <li><a data-href="#">Web Design</a></li>
@@ -215,15 +225,7 @@
             <li><a data-href="#">Social Media</a></li>
           </ul>
         </div>
-        <div class="col-md-3 col-sm-6">
-          <h5>Support</h5>
-          <ul class="list-unstyled">
-            <li><a data-href="#">FAQs</a></li>
-            <li><a data-href="#">Privacy Policy</a></li>
-            <li><a data-href="#">Terms &amp; Conditions</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3 col-sm-6">
+        <div class="col-lg-2 col-md-6">
           <h5>Connect With Us</h5>
           <ul class="list-unstyled">
             <li><a data-href="#">Facebook</a></li>
@@ -231,14 +233,28 @@
             <li><a data-href="#">LinkedIn</a></li>
           </ul>
         </div>
+        <div class="col-lg-2 col-md-6">
+          <label for="email" class="form-label">Newsletter</label>
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control rounded"
+              id="email"
+              placeholder="Enter your email"
+            />
+          </div>
+          <button class="btn btn-outline-primary mt-2 col-12" type="button">
+            Subscribe
+          </button>
+        </div>
       </div>
       <hr />
       <div class="row">
         <div class="col-md-6">
-          <p>&copy; 2023 Lorem. All rights reserved.</p>
+          <p class="mb-0 text-white-50">Copyright &copy; 2023 Kelompok 3</p>
         </div>
-        <div class="col-md-6 text-md-right">
-          <ul class="list-inline">
+        <div class="col-md-6 d-flex justify-content-end">
+          <ul class="list-inline mb-0">
             <li class="list-inline-item"><a data-href="#">Privacy</a></li>
             <li class="list-inline-item"><a data-href="#">Terms</a></li>
             <li class="list-inline-item"><a data-href="#">FAQ</a></li>
@@ -247,6 +263,7 @@
       </div>
     </div>
   </footer>
+
   <!-- JS Files -->
   <script>
     const links = document.querySelectorAll("a[data-href]");
