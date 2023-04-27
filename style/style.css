@@ -1,124 +1,26 @@
 body {
-  background-color: #caf5ff;
-}
-
-* {
-  padding: 0;
-  margin: 0;
+  background-color: #e0e0e0;
 }
 
 /* Style untuk header */
 header {
-  background-image: radial-gradient(
-    circle at -4.41% 88.1%,
-    #caf5ff 0,
-    #8ed6fe 25%,
-    #3cb5f2 50%,
-    #0094e6 75%,
-    #0076db 100%
-  );
+  background-color: #cdcdcd;
   padding: 10px 0;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .navbar {
-  position: relative;
-  margin: 20px auto 0;
-  width: 95%;
-}
-
-/* Card */
-h2 {
-  text-align: center;
-  padding-top: 50px;
-}
-
-h5 {
-  text-align: center;
-}
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 1200px;
-  margin-block: 2rem;
-  gap: 2rem;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  width: clamp(5rem, calc(15rem + 2vw), 22rem);
-  overflow: hidden;
-  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
-  border-radius: 1em;
-  background: #ece9e6;
-  background: linear-gradient(to right, #ffffff, #ece9e6);
-}
-
-img {
-  max-width: 100%;
-  display: block;
-  object-fit: cover;
-}
-
-.card-body {
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.tag {
-  align-self: flex-start;
-  padding: 0.25em 0.75em;
-  border-radius: 1em;
-  font-size: 0.75rem;
-}
-
-.tag + .tag {
-  margin-left: 0.5em;
-}
-
-.tag-blue {
-  background: #56ccf2;
-  background: linear-gradient(to bottom, #2f80ed, #56ccf2);
-  color: #fafafafa;
-}
-
-.card-body h4 {
-  font-size: 1.5rem;
-  text-transform: capitalize;
-}
-
-.card-footer {
-  display: flex;
-  padding: 1rem;
-  margin-top: auto;
-}
-
-.user {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.user-image {
-  border-radius: 50%;
-}
-
-.user-info > small {
-  color: #666;
+  background-color: #cdcdcd;
 }
 
 /* Style untuk navbar */
 .navbar-brand {
   font-weight: bold;
-  text-transform: uppercase;
-  color: white;
-  text-decoration: none;
-  line-height: 50px;
-  position: relative;
-  z-index: 1;
 }
 
 .navbar-nav .nav-link {
@@ -204,9 +106,12 @@ img {
   margin-bottom: 30px;
 }
 
+/* Footer */
 footer {
   font-weight: bold;
   margin-top: 10px;
+  
+  
 }
 
 /* TODOS STYLE */
@@ -232,162 +137,134 @@ footer {
   float: right;
 }
 
-/* TODOS STYLE */
-.td-card {
-  margin-bottom: 20px;
+/* portfoliolist */
+
+.portfolio-top {
+  padding: 5% 0 0;
 }
 
-@media only screen and (max-width: 768px) {
-  .col-md-6 {
-    margin-bottom: 20px;
-  }
+.portfolio-top h3 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #424147;
+  font-weight: 600;
+  font-family: "times New Roman";
+  text-transform: uppercase;
+  margin-bottom: 15px;
 }
 
-.card-body .btn {
-  margin-top: 5px;
+.portfolio-top h5 {
+  text-align: center;
+  font-size: 1.5em;
+  color: #424147;
+  font-weight: 600;
+  font-family: "Century Gothic";
+  margin-bottom: 60px;
 }
 
-.card-body .list-group {
-  margin-left: 5px;
+.portfolio-top h3 {
+  font-size: 2em;
 }
 
-.float-right {
-  float: right;
+.portfolio-top h5 {
+  font-size: 1.2em;
+  margin-bottom: 40px;
 }
 
-/* Style Our Work */
 .container {
-  width: 1200px;
-  margin: 0px auto;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
-.box {
-  width: 235px;
-  padding: 20px;
-  background-color: #f1f1f1;
-  border: 1px solid grey;
-}
-
-.box img {
-  width: 100%;
-  height: 170px;
-  object-fit: contain;
-}
-
-/* Footer */
-
-footer {
-  background-color: #121315;
-  color: #a7a7a7;
-  font-size: 16px;
-}
-footer * {
-  font-family: "Poppins", sans-serif;
-  box-sizing: border-box;
-  border: none;
-  outline: none;
-}
-.row {
-  padding: 1em 1em;
-}
-.row.primary {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 2fr;
-  align-items: stretch;
-}
-.column {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 0 2em;
-  min-height: 15em;
-}
-h3 {
-  width: 100%;
-  text-align: left;
-  color: white;
-  font-size: 1.4em;
-  white-space: nowrap;
-}
-ul {
+#filters {
+  padding: 0% 10% 5% 10%;
   list-style: none;
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  margin: 0;
-}
-/* li:not(:first-child) {
-  margin-top: 0.8em;
-} */
-ul li a {
-  color: #a7a7a7;
-  text-decoration: none;
-}
-ul li a:hover {
-  color: #2a8ded;
-}
-.about p {
-  text-align: justify;
-  line-height: 2;
-  margin: 0;
-}
-input,
-button .subs {
-  font-size: 1em;
-  padding: 1em;
-  width: 100%;
-  border-radius: 5px;
-  margin-bottom: 5px;
-  color: #ffffff;
-}
-.subs {
-  background-color: #0094e6;
-  padding: 15px 41%;
-  border-radius: 10px;
 }
 
-div.tweet {
-  display: flex;
-  justify-content: space-around;
-  font-size: 2.4em;
-  flex-direction: row;
-  margin-top: 0.5em;
-}
-.tweet i {
-  color: #bac6d9;
-}
-
-.copyright {
-  padding: 10px;
-  margin: auto;
-  background-color: #25262e;
-}
-.footer-menu {
+#filters li {
   float: left;
-  margin-top: 10px;
 }
 
-.footer-menu a {
-  color: #cfd2d6;
-  padding: 6px;
-
+#filters li span {
+  display: block;
+  padding: 10px 30px;
   text-decoration: none;
-}
-.footer-menu a:hover {
-  color: #27bcda;
-}
-.copyright p {
-  font-size: 0.9em;
-  text-align: right;
-}
-@media screen and (max-width: 850px) {
-  .row.primary {
-    grid-template-columns: 1fr;
-  }
+  color: #666;
+  cursor: pointer;
+  font-size: 1.5em;
 }
 
-/* modal */
-.modal-header {
-  background-color: #787c80;
-  color: #fff;
+#filters li span.active {
+  background: #FC4F00;
+  color: #000;
+  border-radius: 15px;
 }
+
+#portfoliolist .portfolio {
+  width: 31.3%;
+  margin: 1%;
+  display: none;
+  float: left;
+  overflow: hidden;
+}
+
+.portfolio-wrapper {
+  overflow: hidden;
+  position: relative !important;
+  background: #F79540;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.portfolio img {
+  max-width: 100%;
+  position: relative;
+  display: block;
+  transition: all 300ms !important;
+  -webkit-transition: all 300ms !important;
+  -moz-transition: all 300ms !important;
+}
+
+.portfolio .text-category {
+  display: block;
+  font-size: 9px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.links {
+  padding: 10px 20px;
+}
+
+.links h4 {
+  padding-bottom: 10px;
+  float: left;
+}
+
+.links h4 a {
+  color: #fff;
+  font-size: 1.4em;
+}
+
+.links h4 a:hover {
+  color: #000;
+}
+
+.links ul li a {
+  font-size: 13px;
+  color: #FFF;
+  padding-left: 5px;
+}
+
+.links ul li a:hover {
+  text-decoration: underline;
+}
+
+/* End portfoliolist */
+
+/* Project */
+
+/* End Project */
