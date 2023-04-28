@@ -81,6 +81,19 @@ footer {
   font-weight: bold;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a {
+  font-family: "Montserrat", sans-serif;
+}
 /* portfoliolist */
 
 .portfolio-top {
@@ -212,3 +225,13 @@ footer {
 /* Project */
 
 /* End Project */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  cursor: default;
+}

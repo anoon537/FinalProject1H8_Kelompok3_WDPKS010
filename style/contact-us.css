@@ -82,6 +82,20 @@ footer ul {
   color: #787c80;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a {
+  font-family: "Montserrat", sans-serif;
+}
+
 /* contact us style */
 .form-label {
   font-weight: 500;
@@ -160,4 +174,14 @@ iframe {
   border-radius: 10px;
   display: block;
   margin: 0 auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  cursor: default;
 }

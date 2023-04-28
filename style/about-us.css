@@ -96,7 +96,8 @@ h4,
 h5,
 h6,
 p,
-span {
+span,
+a {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -170,7 +171,6 @@ p {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  cursor: pointer;
 }
 .about-us-section .box i {
   font-size: 42px;
@@ -205,12 +205,30 @@ p {
   transform: scale(1.2);
 }
 
+/* Our Skills & Member */
 #our-skills {
   padding: 60px 0;
 }
 
 #our-skills h2 {
   text-align: center;
+}
+
+#our-skills h2 {
+  font-size: 28px;
+  color: #0076db;
+}
+#our-skills .break-small {
+  width: 80px;
+  height: 3px;
+  background-color: #0094e6;
+}
+#our-skills .col-md-4 {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+#our-skills .col-md-4:hover {
+  transform: scale(1.2);
 }
 
 .skill {
@@ -223,10 +241,6 @@ p {
 .skill h3 {
   font-size: 24px;
   margin-bottom: 20px;
-}
-
-#our-skills .col-md-4 {
-  cursor: pointer;
 }
 
 .team-member {
@@ -251,15 +265,6 @@ p {
   color: #777;
 }
 
-#our-skills h2 {
-  font-size: 28px;
-  color: #0076db;
-}
-#our-skills .break-small {
-  width: 80px;
-  height: 3px;
-  background-color: #0094e6;
-}
 .skill-bars {
   display: flex;
   flex-direction: column;
@@ -319,4 +324,17 @@ p {
 .modal-footer h5 {
   margin-right: 10px;
   font-weight: bold;
+}
+.modal-content {
+  background-color: #caf5ff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  cursor: default;
 }
