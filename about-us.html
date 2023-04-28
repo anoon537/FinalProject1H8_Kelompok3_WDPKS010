@@ -165,6 +165,78 @@
           </div>
         </div>
       </div>
+      <section id="our-skills">
+        <div class="container">
+          <h2>OUR SKILLS</h2>
+          <div class="d-flex justify-content-center">
+            <div class="break-small mb-lg-5"></div>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar">
+              <div class="skill-bar-progress bg-info" style="width: 80%"></div>
+              <span class="skill-bar-title text-info">HTML/CSS</span>
+              <span class="skill-bar-percent text-info">80%</span>
+            </div>
+
+            <div class="skill-bar">
+              <div
+                class="skill-bar-progress bg-warning"
+                style="width: 60%"
+              ></div>
+              <span class="skill-bar-title text-warning">JavaScript</span>
+              <span class="skill-bar-percent text-warning">60%</span>
+            </div>
+
+            <div class="skill-bar">
+              <div
+                class="skill-bar-progress bg-danger"
+                style="width: 40%"
+              ></div>
+              <span class="skill-bar-title text-danger">PHP</span>
+              <span class="skill-bar-percent text-danger">40%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="container mt-xxl-5">
+          <h2>OUR TEAM</h2>
+          <div class="d-flex justify-content-center">
+            <div class="break-small mb-lg-5"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="team-member">
+                <img
+                  src="https://avatars.githubusercontent.com/u/77924355?v=4"
+                  alt="Team Member 1"
+                />
+                <h3>Elan Pratama</h3>
+                <p>Web Developer</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="team-member">
+                <img
+                  src="https://avatars.githubusercontent.com/u/79849107?v=4"
+                  alt="Team Member 2"
+                />
+                <h3>Almas Agung Firdaus</h3>
+                <p>Web Developer</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="team-member">
+                <img
+                  src="https://avatars.githubusercontent.com/u/97769004?v=4"
+                  alt="Team Member 3"
+                />
+                <h3>Muhammad Mahmuda Prawira</h3>
+                <p>Web Developer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </body>
   <!-- Footer -->
@@ -260,6 +332,10 @@
       </div>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script>
     const links = document.querySelectorAll("a[data-href]");
 
@@ -286,8 +362,37 @@
         document.getElementById("emailSubs").value = "";
       }
     });
+    var ctx = document.getElementById("skill-chart").getContext("2d");
+    var myChart = new Chart(ctx, {
+      type: "bar",
+      data: {
+        labels: ["Technical", "Communication", "Leadership"],
+        datasets: [
+          {
+            label: "% Skill Level",
+            data: [90, 80, 70],
+            backgroundColor: [
+              "rgba(54, 162, 235, 0.2)",
+              "rgba(255, 206, 86, 0.2)",
+              "rgba(75, 192, 192, 0.2)",
+            ],
+            borderColor: [
+              "rgba(54, 162, 235, 1)",
+              "rgba(255, 206, 86, 1)",
+              "rgba(75, 192, 192, 1)",
+            ],
+            borderWidth: 1,
+          },
+        ],
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            max: 100,
+          },
+        },
+      },
+    });
   </script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </html>

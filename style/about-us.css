@@ -95,7 +95,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+span {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -202,4 +203,106 @@ p {
 .about-us-section .box:hover::after,
 .about-us-section .box:hover::before {
   transform: scale(1.2);
+}
+
+#our-skills {
+  padding: 60px 0;
+}
+
+#our-skills h2 {
+  text-align: center;
+}
+
+.skill {
+  padding: 20px;
+  border: 1px solid #ddd;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.skill h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.team-member {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.team-member img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.team-member h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.team-member p {
+  font-size: 18px;
+  color: #777;
+}
+
+#our-skills h2 {
+  font-size: 28px;
+  color: #0076db;
+}
+#our-skills .break-small {
+  width: 80px;
+  height: 3px;
+  background-color: #0094e6;
+}
+.skill-bars {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.skill-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.skill-bar-progress {
+  height: 40px;
+  background-color: #007bff;
+  border-radius: 5px;
+}
+
+.skill-bar-title {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.skill-bar-percent {
+  height: 40px;
+  background-color: #212529;
+  margin-left: auto;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  line-height: 40px; /* sesuaikan dengan nilai height */
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media (max-width: 990px) {
+  .skill-bars {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .team-member {
+    margin-top: 40px;
+  }
+  .skill-bar-title {
+    margin-right: 10px;
+  }
 }
