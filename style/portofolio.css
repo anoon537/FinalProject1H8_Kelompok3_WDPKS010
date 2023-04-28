@@ -1,30 +1,41 @@
 body {
-  background-color: #e0e0e0;
+  background-color: #caf5ff;
 }
 
 /* Style untuk header */
+
 header {
-  background-color: #cdcdcd;
+  background-image: radial-gradient(
+    circle at -4.41% 88.1%,
+    #caf5ff 0,
+    #8ed6fe 25%,
+    #3cb5f2 50%,
+    #0094e6 75%,
+    #0076db 100%
+  );
   padding: 10px 0;
 }
 
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar {
-  background-color: #cdcdcd;
-}
-
 /* Style untuk navbar */
+.navbar {
+  position: relative;
+  margin: 20px auto 0;
+  width: 95%;
+}
+
 .navbar-brand {
   font-weight: bold;
+  text-transform: uppercase;
+  font-size: 30px;
 }
 
 .navbar-nav .nav-link {
   font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navbar-nav .nav-item:hover {
+  color: orange;
 }
 
 /* Style untuk banner */
@@ -56,85 +67,18 @@ ul {
 .banner-text h1 {
   margin-left: 10px;
   font-size: 48px;
+  text-align: center;
 }
 
 .banner-text p {
   margin-left: 10px;
   margin-right: 10px;
   font-size: 24px;
+  text-align: center;
 }
 
-.banner-text button {
-  margin-left: 10px;
-  font-size: 14px;
-}
-
-/* Style untuk order now modal */
-.modal-content table {
-  margin-bottom: 0;
-}
-
-/* Style untuk about us */
-#about-us {
-  background-color: #e0e0e0;
-  padding: 50px 0;
-}
-
-#about-us h2 {
-  font-weight: bold;
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-
-#about-us p {
-  margin-bottom: 30px;
-}
-
-/* Style untuk services */
-#services {
-  background-color: #e0e0e0;
-  padding: 50px 0;
-}
-
-#services h2 {
-  font-weight: bold;
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-
-#services p {
-  margin-bottom: 30px;
-}
-
-/* Footer */
 footer {
   font-weight: bold;
-  margin-top: 10px;
-  
-  
-}
-
-/* TODOS STYLE */
-.td-card {
-  margin-bottom: 20px;
-}
-
-@media only screen and (max-width: 768px) {
-  .col-md-6 {
-    margin-bottom: 20px;
-  }
-}
-
-.card-body .btn {
-  margin-top: 5px;
-}
-
-.card-body .list-group {
-  margin-left: 5px;
-}
-
-.float-right {
-  float: right;
 }
 
 /* portfoliolist */
@@ -197,7 +141,7 @@ footer {
 }
 
 #filters li span.active {
-  background: #FC4F00;
+  background: #fc4f00;
   color: #000;
   border-radius: 15px;
 }
@@ -213,7 +157,7 @@ footer {
 .portfolio-wrapper {
   overflow: hidden;
   position: relative !important;
-  background: #F79540;
+  background: #f79540;
   border-radius: 20px;
   cursor: pointer;
 }
@@ -255,7 +199,7 @@ footer {
 
 .links ul li a {
   font-size: 13px;
-  color: #FFF;
+  color: #fff;
   padding-left: 5px;
 }
 

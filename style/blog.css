@@ -1,0 +1,83 @@
+body {
+  background-color: #caf5ff;
+}
+
+/* Style untuk header */
+
+header {
+  background-image: radial-gradient(
+    circle at -4.41% 88.1%,
+    #caf5ff 0,
+    #8ed6fe 25%,
+    #3cb5f2 50%,
+    #0094e6 75%,
+    #0076db 100%
+  );
+  padding: 10px 0;
+}
+
+/* Style untuk navbar */
+.navbar {
+  position: relative;
+  margin: 20px auto 0;
+  width: 95%;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.navbar-nav .nav-link {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Style untuk banner */
+#banner {
+  background-color: #f2f2f2;
+  padding: 50px 0;
+  position: relative;
+}
+
+#banner h1 {
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.banner-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner-text h1 {
+  margin-left: 10px;
+  font-size: 48px;
+  text-align: center;
+}
+
+.banner-text p {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 24px;
+  text-align: center;
+}
+/* footer */
+footer {
+  color: white;
+  margin-top: 20px;
+}
+
+footer ul {
+  color: #787c80;
+}
