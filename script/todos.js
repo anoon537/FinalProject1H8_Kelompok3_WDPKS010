@@ -56,8 +56,15 @@ function updateTodoList() {
     li.appendChild(textNode);
 
     let button = document.createElement("button");
-    button.classList.add("btn", "btn-danger", "float-right");
-    button.innerText = "Delete";
+    button.classList.add(
+      "float-right",
+      "fas",
+      "fa-delete-left",
+      "border-0",
+      "bg-transparent"
+    );
+    button.style.fontSize = "30px"; // ukuran XL
+    button.style.color = "red"; // warna merah
 
     button.addEventListener("click", () => {
       todos = todos.filter((item) => item.id !== todo.id);
