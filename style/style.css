@@ -114,11 +114,7 @@ img {
 .navbar-brand {
   font-weight: bold;
   text-transform: uppercase;
-  color: white;
-  text-decoration: none;
-  line-height: 50px;
-  position: relative;
-  z-index: 1;
+  font-size: 30px;
 }
 
 .navbar-nav .nav-link {
@@ -172,46 +168,9 @@ img {
   margin-bottom: 0;
 }
 
-/* Style untuk about us */
-#about-us {
-  background-color: #e0e0e0;
-  padding: 50px 0;
-}
-
-#about-us h2 {
-  font-weight: bold;
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-
-#about-us p {
-  margin-bottom: 30px;
-}
-
-/* Style untuk services */
-#services {
-  background-color: #e0e0e0;
-  padding: 50px 0;
-}
-
-#services h2 {
-  font-weight: bold;
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-
-#services p {
-  margin-bottom: 30px;
-}
-
 footer {
   font-weight: bold;
   margin-top: 10px;
-}
-
-/* TODOS STYLE */
-.td-card {
-  margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 768px) {
